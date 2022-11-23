@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- table input -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- del and add button -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+</head>
+<body>
+<div id="sidebar">
+<div id="sidebar-toggle-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div class="links">
+   <a href="errortest.html">home</a>
+   <a href="index.html">Add scenario</a>
+   <a href="all_scenario.html">All scenario</a>
+   <a href="vechiles.html">Vechiles</a>
+</div>
+</div>
+  <!-- all scenario table input operation -->
+  <div class="container">
+    <div class="jumbotron text-lefft text-black">
+      <h4> All Scenario</h4>
+    </div>
+    <div class="form-row">
+      <div class="col-md-3">
+        <label> Scenario Name <span class="errdiv"> *</span></label>
+        <input id="txtName" type="text" class="form-control txt txtName" placeholder="Enter scenario Name" required>
+        <input id="txtId" type="hidden" class="form-control txt">
+      </div>
+      <div class="col-md-3 col-sm-6 col-6">
+        <label>scenario time<span class="errdiv"> *</span></label>
+        <input id="txtTime" data-type="number" type="text" minlength="10" maxlength="10"
+          class="form-control txt txtTime" placeholder="scenario time" required>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6">
+        <label>Number of vechile</label>
+        <input id="txtvechiles" type="number" class="form-control txt txtvechiles" minlength="10" maxlength="10"
+          placeholder="number of vechiles">
+      </div>
+    </div>
+  
+    <div class="row pt-2">
+      <div class="col-md-2">
+        <button type="button" class="btn btn-success" id="btnSave">Save</button>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
+      </div>
+    </div>
+    <div class="row pt-3">
+      <div class="col-md-12 col-sm-12 col-12 p-2 ">
+        <table id="tblData" class="table table-bordered table-hover table-striped">
+          <thead>
+            <!-- tabel data -->
+            <tr>
+              <th>Scenario No</th>
+              <th>Scenario Name</th>
+              <th>Scenario Time</th>
+              <th>no of vechiles</th>
+              <th class="text-center">Action</th>
+            </tr>
+          </thead>
+          <tbody> 
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- all scenario table end input -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
